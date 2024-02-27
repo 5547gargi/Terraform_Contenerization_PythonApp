@@ -1,6 +1,6 @@
-PREREQUISIITE -  Create a repo in aws ECR with name - > django-app 
+PREREQUISITE -  Create a repo in aws ECR with name - > django-app 
 
-IMPORTANT - Once the repo is create change the 600735812827.dkr.ecr.us-west-1.amazonaws.com IN COMMANDS TO THE REPO OF YOURS
+IMPORTANT - Once the repo is created change the 600735812827.dkr.ecr.us-west-1.amazonaws.com IN COMMANDS TO THE REPO OF YOURS
 
 1) Change the docker_image_url_django in VARIABLES.TF file with <YOUR ECR REPO URL>
 
@@ -17,20 +17,12 @@ IMPORTANT - Once the repo is create change the 600735812827.dkr.ecr.us-west-1.am
 
 6)docker push 240910715551.dkr.ecr.us-west-1.amazonaws.com/django-app:latest
 
-7) Go to terraform folder and hit this below command 
+7) Go to the terraform folder and hit this below command 
 
-ssh-keygen -f california-region-key-pair
-
-
-terraform init 
-
-
-terraform plan -out terraform.out
-
-
-terraform apply "terraform.out"
-
-
+   ssh-keygen -f california-region-key-pair
+   terraform init 
+   terraform plan -out terraform.out
+   terraform apply "terraform.out"
 
 8) pip install boto3 click
 
