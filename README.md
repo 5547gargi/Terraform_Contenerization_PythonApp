@@ -1,1 +1,1 @@
-# Terraform_Contenerization_PythonApp
+# Terraform_Containerization_PythonApp
